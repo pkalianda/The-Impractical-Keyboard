@@ -1,0 +1,459 @@
+html {
+  background: black; 
+}
+
+.safe{
+  z-index: 2;
+  user-select: none;
+}
+.trap{
+  height: 700px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+[data-active="true"] .trap:hover{
+  background: red;
+}
+[data-active="false"] *{
+  font-size: 0;
+}
+[data-active="false"] .start:before{
+  content: "start";
+  font-weight: bold;
+  font-family: "Golos Text";
+  font-size: 34px;
+  text-align: center;
+  line-height: 200px;
+  width: 100%;
+  display: block;
+}
+.text:before{
+  content: "_";
+  opacity: 0;
+}
+.text:after{
+  content: "_";
+  opacity: 0;
+}
+.a-m-connector {
+  height: 480px;
+  background: #ffffff;
+  width: 10px;
+  position: absolute;
+  left: 720px;
+  top: 200px;
+}
+
+.b-n-connector {
+  height: 480px;
+  background: #ffffff;
+  width: 10px;
+  position: absolute;
+  left: 719px;
+  top: 183px;
+  transform: rotate(15deg);
+}
+
+.c-o-connector {
+  height: 480px;
+  background: #ffffff;
+  width: 10px;
+  position: absolute;
+  left: 720px;
+  top: 183px;
+  transform: rotate(30deg);
+}
+
+.d-p-connector {
+  height: 480px;
+  background: #ffffff;
+  width: 10px;
+  position: absolute;
+  left: 719px;
+  top: 190px;
+  transform: rotate(45deg);
+}
+
+.e-q-connector {
+  height: 480px;
+  background: #ffffff;
+  width: 10px;
+  position: absolute;
+  left: 720px;
+  top: 185px;
+  transform: rotate(60deg);
+}
+
+.f-r-connector {
+  height: 480px;
+  background: #ffffff;
+  width: 10px;
+  position: absolute;
+  left: 720px;
+  top: 182px;
+  transform: rotate(75deg);
+}
+
+.s-g-connector {
+  height: 480px;
+  background: #ffffff;
+  width: 10px;
+  position: absolute;
+  left: 719px;
+  top: 178px;
+  transform: rotate(90deg);
+}
+
+.h-t-connector {
+  height: 480px;
+  background: #ffffff;
+  width: 10px;
+  position: absolute;
+  left: 723px;
+  top: 176px;
+  transform: rotate(-75deg);
+}
+
+.i-u-connector {
+  height: 480px;
+  background: #ffffff;
+  width: 10px;
+  position: absolute;
+  left: 723px;
+  top: 180px;
+  transform: rotate(120deg);
+}
+
+.v-j-connector {
+  height: 480px;
+  background: #ffffff;
+  width: 10px;
+  position: absolute;
+  left: 723px;
+  top: 180px;
+  transform: rotate(-45deg);
+}
+
+.k-w-connector {
+  height: 480px;
+  background: #ffffff;
+  width: 10px;
+  position: absolute;
+  left: 723px;
+  top: 182px;
+  transform: rotate(150deg);
+}
+
+.x-l-connector {
+  height: 480px;
+  background: #ffffff;
+  width: 10px;
+  position: absolute;
+  left: 723px;
+  top: 180px;
+  transform: rotate(-15deg);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  cursor: none;
+}
+
+p {
+  text-align: center;
+  font-family: "Golos Text";
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Golos Text";
+  font-weight: bold;
+  position: relative;
+  padding: 55px;
+}
+
+#container {
+/*   background-color: #000000; */
+  width: 100vw;
+  display: flex;
+  height: 700px
+  position: relative;
+}
+
+.circle {
+  background-color: #ffffff;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  left: 625px;
+  top: 250px;
+}
+
+.title {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Golos Text";
+  text-align: center;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.acircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: 500px;
+  top: 85px;
+}
+
+.mcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: 450px;
+  top: 570px;
+  overflow: scroll;
+}
+
+.scircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: 155px;
+  top: 325px;
+}
+
+.gcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: 590px;
+  top: 323px;
+}
+
+.dcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: 475px;
+  top: 160px;
+}
+
+.pcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: 80px;
+  top: 505px;
+}
+
+.vcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: 35px;
+  top: 155px;
+}
+
+.jcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: 325px;
+  top: 495px;
+}
+
+.bcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: 163px;
+  top: 95px;
+}
+
+.ncircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  right: 13px;
+  top: 563px;
+}
+
+.ccircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: 123px;
+  top: 120px;
+}
+
+.ocircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  right: 170px;
+  top: 540px;
+}
+
+.ecircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: 110px;
+  top: 210px;
+}
+
+.qcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  right: 360px;
+  top: 453px;
+}
+
+.fcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  left: 35px;
+  top: 264px;
+}
+
+.rcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  right: 485px;
+  top: 390px;
+}
+
+.hcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  right: 65px;
+  top: 382px;
+}
+
+.tcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  right: 584px;
+  top: 260px;
+}
+
+.ucircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  right: 608px;
+  top: 203px;
+}
+
+.icircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  right: 240px;
+  top: 447px;
+}
+
+.kcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  right: 378px;
+  top: 540px;
+}
+
+.wcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  right: 665px;
+  top: 115px;
+}
+
+.xcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  right: 660px;
+  top: 90px;
+}
+
+.lcircle {
+  background-color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+  right: 585px;
+  top: 565px;
+}
+
+.red {
+  background: red;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: fixed;
+  left: 200px;
+  top: 20px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 999;
+}
