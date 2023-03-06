@@ -1,0 +1,34 @@
+
+var redBall = document.querySelector(".red");
+document.querySelector("body").addEventListener("mousemove", function(event){
+	var x = event.clientX;
+	var y = event.clientY;
+	redBall.style.left = x + "px"
+	redBall.style.top = y + "px"
+})
+
+var container = document.querySelector("#container");
+var text = document.querySelector(".text");
+var trap = document.querySelector(".trap");
+var start = document.querySelector(".start")
+start.addEventListener("mousedown", function(event){
+	if(container.getAttribute("data-active") === "false"){
+    container.setAttribute("data-active", "true");
+	  text.innerText = "";
+  }
+})
+document.querySelector(".trap").addEventListener("mouseover", function(event){
+	setTimeout(function(){
+    container.setAttribute("data-active", "false");
+    text.innerText = text.getAttribute("data-default");
+  }, 500);
+})
+
+document.querySelectorAll(".safe").forEach(function(item){
+  item.addEventListener("mousedown", function(event){
+    var value = item.getAttribute("data-value");
+    if (value) {
+      text.innerHTML = text.innerHTML + value;
+    }
+  })
+})
